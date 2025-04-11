@@ -16,7 +16,7 @@ O objetivo do carro é através de evolução genética e utilizando seus sensor
 
 ## 📝 Conteúdo do Repositório
 ### Pasta `Código`:
-- `Self_Driving_Car` - Notebook contendo o código.
+- `Self_Driving_Car.ipynb` - Notebook contendo o código.
 ### Pasta `Config`:
 - `Arquivo_Neat.txt` - Configurações do NEAT.
 ### Pasta `Desenhos`:
