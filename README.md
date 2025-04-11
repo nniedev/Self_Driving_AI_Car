@@ -18,10 +18,10 @@ O objetivo do carro é através de evolução genética e utilizando seus sensor
 Pasta `Código`:
 - `Self_Driving_Car` - Notebook contendo o código.
 Pasta `Config`:
-- `Arquivo_Neat.txt` - Configurações do NEAT
+- `Arquivo_Neat.txt` - Configurações do NEAT.
 Pasta `Desenhos`:
-- `Carro.png` - Desenho do Carro
-- `Pista().png` - Desenhos dos Trajetos
+- `Carro.png` - Desenho do Carro.
+- `Pista().png` - Desenhos dos Trajetos.
 README:
 - `README.md` - Documento explicativo sobre o projeto.
 
