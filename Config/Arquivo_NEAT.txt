@@ -1,79 +1,79 @@
 [NEAT]
-fitness_criterion                     = max
-fitness_threshold                     = 100000000
-pop_size                              = 30
-reset_on_extinction                   = True
+fitness_criterion     = max
+fitness_threshold     = 100000000
+pop_size              = 30
+reset_on_extinction   = True
 
-[Geracao_Padrao]
-# Ativação
-ativacao_padrao                       = tanh
-frequencia_mutacao_ativacao           = 0.01
-opcoes_ativacao                       = tanh
+[DefaultGenome]
+# node activation options
+activation_default      = tanh
+activation_mutate_rate  = 0.01
+activation_options      = tanh
 
-# Agregação
-agrecacao_padrao                      = sum
-frequencia_mutacao_agrega             = 0.01
-opcoes_agragacao                      = sum
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.01
+aggregation_options     = sum
 
-# Viés
-vies_media_inicial                    = 0.0
-vies_stdev_inicial                    = 1.0
-vies_valor_maximo                     = 30.0
-vies_valor_minimo                     = -30.0
-vies_mutacao_valor                    = 0.5
-vies_mutacao_frequencia               = 0.7
-vies_substituir_frequencia            = 0.1
+# node bias options
+bias_init_mean          = 0.0
+bias_init_stdev         = 1.0
+bias_max_value          = 30.0
+bias_min_value          = -30.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
 
-# Compatibilidade de Geração
-coeficiente_compatibilidade_desmembra = 1.0
-coeficiente_compatibilidade_peso      = 0.5
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
 
-# Adiciona/Remove TaxasConexão
-add_frequencia_con                    = 0.5
-rem_frequencia_con                    = 0.5
+# connection add/remove rates
+conn_add_prob           = 0.5
+conn_delete_prob        = 0.5
 
-# Habilita opções
-habilitar_padrao                      = True
-habilitar_mutacao                     = 0.01
-alimentacao                           = True
-conexao                               = full
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.01
 
-# Adiciona/Remove Taxas Nós
-add_frequencia_node                   = 0.2
-rem_frequencia_node                   = 0.2
+feed_forward            = True
+initial_connection      = full
 
-# Parametros
-num_escondido                         = 0
-num_inputs                            = 5
-num_outputs                           = 4
+# node add/remove rates
+node_add_prob           = 0.2
+node_delete_prob        = 0.2
 
-# Respostas dos Nós
-resposta_media                        = 1.0
-resposta_stdev                        = 0.0
-resposta_maximo                       = 30.0
-resposta_minima                       = -30.0
-resposta_mutacao_forca                = 0.0
-resposta_mutacao_freq                 = 0.0
-resposta_substituir_freq              = 0.0
+# network parameters
+num_hidden              = 0
+num_inputs              = 5
+num_outputs             = 4
 
-# Peso das Conexões
-peso_media                            = 0.0
-peso_stdev                            = 1.0
-peso_maximo                           = 30.0
-peso_minimo                           = -30.0
-peso_mutacao_forca                    = 0.5
-peso_mutacao_freq                     = 0.8
-peso_substituir_freq                  = 0.1
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.0
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.0
+response_mutate_rate    = 0.0
+response_replace_rate   = 0.0
 
-[EspeciePadrao]
-limite_compatibilidade                = 2.0
+# connection weight options
+weight_init_mean        = 0.0
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
 
-[EstagnacaoPadrao]
-fitness_especie                       = max
-estagnacao_maxima                     = 20
-elitismo_especia                      = 2
+[DefaultSpeciesSet]
+compatibility_threshold = 2.0
 
-[Reproducao]
-elisitmo_reproducao                   = 3
-limite_sobrevivencia                  = 0.2
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 20
+species_elitism      = 2
 
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.2
