@@ -1,7 +1,7 @@
 [NEAT]
 criterios_fit                         = max
 limite_fitness                        = 100000000
-tamanho_populacao                     = 30
+pop_size                     = 30
 resetar_se_extinto                    = True
 
 [Geracao_Padrao]
