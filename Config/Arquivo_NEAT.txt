@@ -1,8 +1,8 @@
 [NEAT]
-criterios_fit                         = max
-limite_fitness                        = 100000000
-pop_size                     = 30
-resetar_se_extinto                    = True
+fitness_criterion                     = max
+fitness_threshold                     = 100000000
+pop_size                              = 30
+reset_on_extinction                   = True
 
 [Geracao_Padrao]
 # Ativação
