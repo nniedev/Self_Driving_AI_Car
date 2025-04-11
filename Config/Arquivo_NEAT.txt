@@ -1,0 +1,79 @@
+[NEAT]
+criterios_fit                         = max
+limite_fitness                        = 100000000
+tamanho_populacao                     = 30
+resetar_se_extinto                    = True
+
+[Geracao_Padrao]
+# Ativação
+ativacao_padrao                       = tanh
+frequencia_mutacao_ativacao           = 0.01
+opcoes_ativacao                       = tanh
+
+# Agregação
+agrecacao_padrao                      = sum
+frequencia_mutacao_agrega             = 0.01
+opcoes_agragacao                      = sum
+
+# Viés
+vies_media_inicial                    = 0.0
+vies_stdev_inicial                    = 1.0
+vies_valor_maximo                     = 30.0
+vies_valor_minimo                     = -30.0
+vies_mutacao_valor                    = 0.5
+vies_mutacao_frequencia               = 0.7
+vies_substituir_frequencia            = 0.1
+
+# Compatibilidade de Geração
+coeficiente_compatibilidade_desmembra = 1.0
+coeficiente_compatibilidade_peso      = 0.5
+
+# Adiciona/Remove TaxasConexão
+add_frequencia_con                    = 0.5
+rem_frequencia_con                    = 0.5
+
+# Habilita opções
+habilitar_padrao                      = True
+habilitar_mutacao                     = 0.01
+alimentacao                           = True
+conexao                               = full
+
+# Adiciona/Remove Taxas Nós
+add_frequencia_node                   = 0.2
+rem_frequencia_node                   = 0.2
+
+# Parametros
+num_escondido                         = 0
+num_inputs                            = 5
+num_outputs                           = 4
+
+# Respostas dos Nós
+resposta_media                        = 1.0
+resposta_stdev                        = 0.0
+resposta_maximo                       = 30.0
+resposta_minima                       = -30.0
+resposta_mutacao_forca                = 0.0
+resposta_mutacao_freq                 = 0.0
+resposta_substituir_freq              = 0.0
+
+# Peso das Conexões
+peso_media                            = 0.0
+peso_stdev                            = 1.0
+peso_maximo                           = 30.0
+peso_minimo                           = -30.0
+peso_mutacao_forca                    = 0.5
+peso_mutacao_freq                     = 0.8
+peso_substituir_freq                  = 0.1
+
+[EspeciePadrao]
+limite_compatibilidade                = 2.0
+
+[EstagnacaoPadrao]
+fitness_especie                       = max
+estagnacao_maxima                     = 20
+elitismo_especia                      = 2
+
+[Reproducao]
+elisitmo_reproducao                   = 3
+limite_sobrevivencia                  = 0.2
+
